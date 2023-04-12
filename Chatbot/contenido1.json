@@ -1,0 +1,27 @@
+{  "contenido": [ 
+    {"tag":"saludo",
+        "patrones":["hola","un saludo","hello"],  
+        "respuestas":["hola que tal","como te va"]  
+    }, 
+    {"tag":"Despedida", 
+        "patrones":["adios","hasta la proxima","nos vemos"],  
+        "respuestas":["cuidate","nos vemos pronto"]  
+    },
+    {"tag":"ayuda ", 
+        "patrones":["Tengo una dudad","Tengo un problema","Necesito ayuda "],  
+        "respuestas":["Cuéntame tu problema ","En que te puedo colaborar "]  
+    },
+    {"tag":"gracias", 
+        "patrones":["Gracias por la ayuda","Muchas gracias","Gracias"],  
+        "respuestas":["De nada","no hay porble con gusto ayudar"]  
+    },
+    {"tag":"Buscar", 
+        "patrones":["Donde puedo encontra los productos que ofrecen","En que lugar se encuentran los producntos",""],  
+        "respuestas":["Los puedes encontrar en la parte de panel de productos ","Se encuentran en el apartado de panel de productos "]  
+    },
+    {"tag":"funciona", 
+        "patrones":["Como funciona el proceso para la compra de productos","Como funciona la compra de los productos",""],  
+        "respuestas":["Funciona de una manera directa y fácil solo tienes que hacer clic al producto que vas a comprara y lo agregas al carrito de compras ","En el carrito de compras aprensen todos los productos que has deseado comprar"]  
+    }
+]
+}

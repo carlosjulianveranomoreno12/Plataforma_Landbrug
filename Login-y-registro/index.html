@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Register - LANDBRUG</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+        <main>
+
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Entrar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register" id="formulario">
+                        <h2>Regístrarse</h2>
+                        <!-- Grupo: Correo Nombre -->
+                        <div class="formulario__grupo" id="grupo__nombre">
+                            <div class="formulario__grupo-input">
+                                <input type="text" placeholder="Nombres" class="formulario__input" name="nombre" id="nombre" placeholder="Johan Alexis">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+                        <!-- Grupo: Correo Apellido -->
+                        <div class="formulario__grupo" id="grupo__apellido">
+                            <div class="formulario__grupo-input">
+                                <input type="text" placeholder="Apellidos" class="formulario__input" name="apellido" id="apellido" placeholder="Rodriguez">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+                        <!-- Grupo: Correo Electronico -->
+                        <div class="formulario__grupo" id="grupo__correo">
+                            <div class="formulario__grupo-input">
+                                <input type="email"  placeholder="Correo Electronico" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                        </div>
+                        <!-- Grupo: Usuario -->
+                        <div class="formulario__grupo" id="grupo__usuario">
+                            <div class="formulario__grupo-input">
+                                <input type="text" placeholder="Usuario"  class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+                        <!-- Grupo: Contraseña -->
+                        <div class="formulario__grupo" id="grupo__password">
+                            <div class="formulario__grupo-input">
+                                <input type="password" placeholder="Contraseña" class="formulario__input" name="password" id="password">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                        </div>
+                        <!-- Grupo: Contraseña 2 -->
+                        <div class="formulario__grupo" id="grupo__password2">
+                            <div class="formulario__grupo-input">
+                                <input type="password" placeholder="Repetir Contraseña" class="formulario__input" name="password2" id="password2">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                        </div>
+                        <button>Regístrarse</button>
+                        <p2 class="warnings" id="warnings"></p2>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="assets/js/script.js"></script>
+        <video src="assets/images/Landbrugv.mp4" autoplay loop></video>
+</body>
+</html>
